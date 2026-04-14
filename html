@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agência de Viagens</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header com navegação -->
+    <header role="banner">
+        <nav aria-label="Menu principal">
+            <h1 class="logo">TravelX</h1>
+            <ul class="nav-links">
+                <li><a href="#destinos">Destinos</a></li>
+                <li><a href="#planos">Planos</a></li>
+                <li><a href="#depoimentos">Depoimentos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <button id="toggle-contrast" aria-pressed="false">Alto Contraste</button>
+            <div class="font-size-controls">
+                <button id="increase-font">A+</button>
+                <button id="decrease-font">A-</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Seção principal -->
+    <main>
+        <!-- Banner/hero -->
+        <section id="hero" class="scroll-reveal" role="region" aria-label="Banner principal">
+            <h2>Explore o Mundo com a TravelX</h2>
+            <p>As melhores experiências de viagem para você e sua família.</p>
+            <a href="#destinos" class="btn-primary">Conheça Nossos Destinos</a>
+        </section>
+
+        <!-- Seção de Destinos -->
+        <section id="destinos" class="scroll-reveal" role="region" aria-label="Destinos de viagem">
+            <h2>Destinos Populares</h2>
+            <div class="destinos-grid" id="destinos-container">
+                <!-- Cards serão gerados pelo JS -->
+            </div>
+        </section>
+
+        <!-- Seção de Planos / Acordeão -->
+        <section id="planos" class="scroll-reveal" role="region" aria-label="Planos de viagem">
+            <h2>Nossos Planos</h2>
+            <div class="accordion" id="planos-accordion">
+                <!-- Itens serão gerados pelo JS -->
+            </div>
+        </section>
+
+        <!-- Seção de Depoimentos / Carrossel -->
+        <section id="depoimentos" class="scroll-reveal" role="region" aria-label="Depoimentos de clientes">
+            <h2>O que dizem nossos clientes</h2>
+            <div class="carousel" id="depoimentos-carousel">
+                <!-- Slides gerados pelo JS -->
+                <button class="prev" aria-label="Slide anterior">&#10094;</button>
+                <button class="next" aria-label="Próximo slide">&#10095;</button>
+            </div>
+        </section>
+
+        <!-- Seção de Contato -->
+        <section id="contato" class="scroll-reveal" role="region" aria-label="Formulário de contato">
+            <h2>Contato</h2>
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer role="contentinfo">
+        <p>&copy; 2026 TravelX. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
