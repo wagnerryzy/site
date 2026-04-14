@@ -1,68 +1,18 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>EduTech</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-
-<header role="banner">
-  <nav aria-label="Menu principal" class="nav">
-    <h1>EduTech</h1>
+<!-- HERO COM IMAGEM -->
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero-content">
     <div>
-      <button id="increaseFont">A+</button>
-      <button id="decreaseFont">A-</button>
-      <button id="contrastToggle">Alto Contraste</button>
+      <h2 id="hero-title">Aprenda Tecnologia de Verdade</h2>
+      <p>Domine programação com projetos reais e modernos.</p>
+      <button>Começar Agora</button>
     </div>
-  </nav>
-</header>
 
-<main>
+    <img src="https://picsum.photos/500/300" alt="Pessoa estudando tecnologia">
+  </div>
+</section>
 
-  <!-- HERO -->
-  <section class="hero" aria-labelledby="hero-title">
-    <h2 id="hero-title">Aprenda Tecnologia de Verdade</h2>
-    <p>Desenvolva habilidades com projetos reais.</p>
-    <button>Começar Agora</button>
-  </section>
-
-  <!-- CARDS DINÂMICOS -->
-  <section class="courses" aria-labelledby="courses-title">
-    <h2 id="courses-title">Cursos</h2>
-    <div id="coursesContainer" class="grid"></div>
-  </section>
-
-  <!-- CARROSSEL -->
-  <section class="carousel" aria-label="Depoimentos">
-    <h2>Depoimentos</h2>
-    <div class="carousel-container">
-      <button id="prev">◀</button>
-      <div id="carouselTrack"></div>
-      <button id="next">▶</button>
-    </div>
-  </section>
-
-  <!-- ACCORDION -->
-  <section class="faq" aria-labelledby="faq-title">
-    <h2 id="faq-title">Perguntas Frequentes</h2>
-
-    <div class="accordion">
-      <button class="accordion-btn">O que é a plataforma?</button>
-      <div class="accordion-content">Uma plataforma de ensino de tecnologia.</div>
-
-      <button class="accordion-btn">Preciso pagar?</button>
-      <div class="accordion-content">Existem planos gratuitos e pagos.</div>
-    </div>
-  </section>
-
-</main>
-
-<footer role="contentinfo">
-  <p>© 2026 EduTech</p>
-</footer>
-
-<script src="script.js"></script>
-</body>
-</html>
+<!-- GALERIA -->
+<section class="gallery" aria-labelledby="gallery-title">
+  <h2 id="gallery-title">Projetos dos Alunos</h2>
+  <div id="galleryContainer" class="grid"></div>
+</section>
